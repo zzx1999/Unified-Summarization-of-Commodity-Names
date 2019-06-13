@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Fuwuwaibao2</display-name>
+  <servlet>
+    <servlet-name>uploadServlet</servlet-name>
+    <servlet-class>test.uploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>csvUtils</servlet-name>
+    <servlet-class>test.csvUtils</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetJson</servlet-name>
+    <servlet-class>test.GetJson</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetJsonListener</servlet-name>
+    <servlet-class>test.GetJsonListener</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showMap</servlet-name>
+    <servlet-class>test.showMap</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>csvUtils</servlet-name>
+    <url-pattern>/servlet/csvUtils</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showMap</servlet-name>
+    <url-pattern>/servlet/showMap</url-pattern>
+  </servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
